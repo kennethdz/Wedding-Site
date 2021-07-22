@@ -17,6 +17,8 @@
       <div class="topnav" id="myTopnav">
         <a href="javascript:void(0);" class="tab active" id = "home-tab" onclick ="showHome()">Home</a>
         <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a>
+        <a href="javascript:void(0);" class="tab" id = "rsvp-tab" onclick ="showRSVP()">RSVP</a>
+        <a href="javascript:void(0);" class="tab" id = "invitation-tab" onclick ="showInvitation()">Invitations</a>
 
         <a href="javascript:void(0);" class="icon" onclick="resizeNavBar()">
           <i class="fa fa-bars"></i>
@@ -25,7 +27,7 @@
 
       <!-- home tab  -->
       <div class = "content" id = "home-content">
-        <p> Welcome to Our Wedding Page !</p>
+        <p> You are invited !</p>
           <img id = "home-picture" src = "images/home-picture.JPG"> </img>
       </div>
       
@@ -35,7 +37,37 @@
         <img id = "mimi-picture" src = "images/MIMI.PNG"> </img>
       </div>
 
-    </div>
+      <div class = "content hide" id = "invitation-content">
+        <p> Welcome to my invitation Page ! </p>
+      </div>
 
+      <div class = "content hide" id = "rsvp-content">
+        <p> Welcome to our RSVP Page ! </p>
+        <label> Please RSVP by October 1st, 2021
+          <div class = "input-field">
+            <label>Attending!</label>
+            <input type="checkbox" id = "input-accept" onclick="checkChoice()"/>
+          </div>
+
+          <div class = "input-field">
+            <label>Can't make it :(</label>
+            <input type="checkbox" id = "input-decline" onclick="checkChoice()"/>
+          </div>
+
+          <div class = "input-field">
+            <label>Name?</label>
+            <input type="text" id = "input-name"/>
+          </div>
+
+          <div class = "input-field">
+            <label>How many?</label>
+            <input type="text" id = "input-count"/>
+          </div>
+      
+          <button id= "text-button" onclick = "submitText()" >Submit</button>
+        </label>
+      </div>
+
+    </div>
   </body>
 </html>

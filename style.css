@@ -39,6 +39,12 @@
       float: right;
       display: block;
     }
+    .main {
+      font-size: 10px;
+    }
+    input  {
+      max-width: 100px;
+    }
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -93,6 +99,7 @@
     width: 80%;
     padding: 20px;
     text-align: center;
+    font-size: 24px;
   }
 
   .hide {
@@ -105,4 +112,14 @@
 img {
       max-width: 80%;
       max-height: 380px;
+  }
+
+  .input-field {
+    display:flex;
+    justify-content: space-between;
+    justify-self: center;
+    
+  }
+  input {
+    max-height: 24px;
   }
