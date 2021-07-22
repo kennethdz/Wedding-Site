@@ -1,10 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" type="type/text" href="style.css">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
   <head>
     <title> Kenneth and Mandy's Wedding</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
   </head>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body>
-    <p> Welcome to my website  </p>
+    <div class="bg-image"></div>
+    <div class="main">
+      <!-- navigation bar  -->
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="tab active" id = "home-tab" onclick ="showHome()">Home</a>
+        <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="resizeNavBar()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+
+      <!-- home tab  -->
+      <div class = "content" id = "home-content">
+        <p> Welcome to Our Wedding Page !</p>
+          <img id = "home-picture" src = "images/home-picture.JPG"> </img>
+      </div>
+      
+      <!-- all other tabs start out hidden  -->
+      <div class = "content hide" id = "mimi-content">
+        <p> Welcome to my Mimi Page ! </p>
+        <img id = "mimi-picture" src = "images/MIMI.PNG"> </img>
+      </div>
+
+    </div>
+
   </body>
 </html>
