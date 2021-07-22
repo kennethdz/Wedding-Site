@@ -74,7 +74,8 @@ async function submitText() {
     }
     console.log(uri);
     let encoded = encodeURIComponent(uri);
-    let href = "sms:+19167935731&body=" + uri;
+    let phone = "19167935731"
+    let href = "sms:+" + phone + "&body=" + encoded;
     location.href= href;
 
     // await TwilioSMS(9167935731, uri);
