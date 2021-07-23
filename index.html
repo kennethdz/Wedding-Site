@@ -11,38 +11,46 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <body>
+              <!-- navigation bar  -->
+              <div class="topnav" id="myTopnav">
+                <a href="javascript:void(0);" class="tab active" id = "home-tab" onclick ="showHome()">Home</a>
+                <!-- <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a> -->
+                <a href="javascript:void(0);" class="tab" id = "invitation-tab" onclick ="showInvitation()">Invitations</a>
+                <a href="javascript:void(0);" class="tab" id = "rsvp-tab" onclick ="showRSVP()">RSVP</a>
+                <a href="javascript:void(0);" class="tab" id = "details-tab" onclick ="showDetails()">Details</a>
+                <a href="javascript:void(0);" class="tab" id = "photos-tab" onclick ="showPhotos()">Photos</a>
+                <a href="javascript:void(0);" class="icon" onclick="resizeNavBar()">
+                  <i class="fa fa-bars"></i>
+                </a>
+              </div>
     <div class="bg-image"></div>
-    <div class="main">
-      <!-- navigation bar  -->
-      <div class="topnav" id="myTopnav">
-        <a href="javascript:void(0);" class="tab active" id = "home-tab" onclick ="showHome()">Home</a>
-        <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a>
-        <a href="javascript:void(0);" class="tab" id = "rsvp-tab" onclick ="showRSVP()">RSVP</a>
-        <a href="javascript:void(0);" class="tab" id = "invitation-tab" onclick ="showInvitation()">Invitations</a>
 
-        <a href="javascript:void(0);" class="icon" onclick="resizeNavBar()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </div>
+    <div class="main">
+
 
       <!-- home tab  -->
       <div class = "content" id = "home-content">
+        <p> Welcome to our wedding page!</p>
         <p> You are invited !</p>
-          <img id = "home-picture" src = "images/home-picture.JPG"> </img>
+        <div class = "wedding-date">
+          <p >Saturday, November 13, 2021 </p>
+        </div>
+          <img id = "home-picture" src = "images/home-picture.JPG">
       </div>
       
       <!-- all other tabs start out hidden  -->
-      <div class = "content hide" id = "mimi-content">
+      <!-- mimi tab  -->
+      <!-- <div class = "content hide" id = "mimi-content">
         <p> Welcome to my Mimi Page ! </p>
-        <img id = "mimi-picture" src = "images/MIMI.PNG"> </img>
-      </div>
-
+        <img id = "mimi-picture" src = "images/MIMI.PNG"> 
+      </div> -->
+      <!-- invitation tab  -->
       <div class = "content hide" id = "invitation-content">
-        <p> Welcome to my invitation Page ! </p>
+        <img id = "church-picture" src = "images/invitation-church.jpg">
+        <img id = "reception-picture" src = "images/invitation reception.jpg"> 
       </div>
-
+      <!-- RSVP tab  -->
       <div class = "content hide" id = "rsvp-content">
-        <p> Welcome to our RSVP Page ! </p>
         <label> Please RSVP by October 1st, 2021
           <div class = "input-field">
             <label>Attending!</label>
@@ -66,6 +74,58 @@
       
           <button id= "text-button" onclick = "submitText()" >Submit</button>
         </label>
+      </div>
+      <!-- details tab  -->
+      <div class = "content hide" id = "details-content">
+        <div class = "detail-box">
+          <img id = "gifts-picture" src = "images/gifts-to-bring.jpg"> 
+        </div>
+        <div class = "detail-box">
+          <h3>Our Wedding Colors!</h3>
+          <div class = "color">
+           <div class = "circle" id = "blush"> </div><p> Blush </p> 
+          </div>
+          <div class = "color"> 
+            <div class = "circle" id = "gold"> </div><p> Gold </p> 
+          </div>
+          <div class = "color">
+           <div class = "circle" id = "green"> </div><p> Green </p> 
+          </div>
+          <div class = "color">
+            <div class = "circle" id = "white"> </div><p> White </p> 
+          </div>
+        </div>
+        <div class = "detail-box">
+          <h3>About us</h3>
+          <img id = "about-us-picture" src="images/about-us.jpeg">
+        </div>
+      </div>
+      <!-- photos tab  -->
+      <div class = "content hide" id = "photos-content">
+        <p> Our Wedding Photos </p>
+        <img class="mySlides" src="images/pic1.JPG">
+        <img class="mySlides" src="images/pic2.JPG">
+        <img class="mySlides" src="images/pic3.JPG">
+        <img class="mySlides" src="images/pic4.JPG">
+        <img class="mySlides" src="images/pic5.JPG">
+        <img class="mySlides" src="images/pic6.JPG">
+        <img class="mySlides" src="images/pic7.JPG">
+        <img class="mySlides" src="images/pic8.JPG">
+        <img class="mySlides" src="images/pic9.JPG">
+        <img class="mySlides" src="images/pic10.JPG">
+        <img class="mySlides" src="images/pic11.JPG">
+        <img class="mySlides" src="images/pic12.JPG">
+        <img class="mySlides" src="images/pic13.JPG">
+        <img class="mySlides" src="images/pic14.JPG">
+        <img class="mySlides" src="images/pic15.JPG">
+        <img class="mySlides" src="images/pic16.JPG">
+        <img class="mySlides" src="images/pic17.JPG">
+        <img class="mySlides" src="images/pic18.JPG">
+        <img class="mySlides" src="images/pic19.JPG">
+        <img class="mySlides" src="images/pic20.JPG">
+        <img class="mySlides" src="images/pic21.JPG">
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
       </div>
 
     </div>

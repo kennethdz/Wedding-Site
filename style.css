@@ -2,6 +2,8 @@
 .topnav {
     background-color: #333;
     overflow: hidden;
+    z-index: 9;
+    position: fixed;
   }
   
   /* Style the links inside the navigation bar */
@@ -10,7 +12,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 12px;
     text-decoration: none;
     font-size: 17px;
   }
@@ -44,6 +46,12 @@
     }
     input  {
       max-width: 100px;
+    }
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
     }
   }
   
@@ -100,6 +108,9 @@
     padding: 20px;
     text-align: center;
     font-size: 24px;
+    max-height: 90%;
+    
+    overflow: auto;
   }
 
   .hide {
@@ -108,10 +119,12 @@
   .content {
     justify-content: center;
     font-family: 'Dancing Script', cursive;
+
 }
 img {
       max-width: 80%;
       max-height: 380px;
+      padding: 10px;
   }
 
   .input-field {
@@ -123,3 +136,60 @@ img {
   input {
     max-height: 24px;
   }
+
+  .wedding-date {
+    border: 2px solid black;
+    box-sizing: border-box;
+
+  }
+
+  .circle {
+    width: 25px; height: 25px ;
+    border-radius: 50%; 
+    align-self: center;
+  }
+
+  .color {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+
+  }
+
+  #blush {
+    color: #E8C7C8;
+    background-color: #E8C7C8;
+  }
+
+  #gold {
+    color: goldenrod;
+    background-color: goldenrod;
+  }
+
+  #green {
+    color: #acbda1;
+    background-color: #acbda1;
+  }
+
+  #white {
+    color: white;
+    background-color: white;
+  }
+.detail-box {
+  border: 2px solid black;
+  box-sizing: border-box;
+  margin: 15px;
+}
+
+label {
+  padding: 10px;
+}
+
+.mySlides {
+  margin: auto;
+  /* only works well when are pictures are same orientation  */
+  /* height: 100%; */
+}
+
+
