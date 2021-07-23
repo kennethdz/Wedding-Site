@@ -81,13 +81,13 @@ async function submitText() {
     console.log(accept.checked, decline.checked, name.value, count.value);
     let uri = "";
     if (accept.checked) {
-        uri = "I, " + name.value + ", am attending your wedding with " + count.value + " guests.";
+        uri = "Congratulations! This is " + name.value + " and I am attending your wedding with " + count.value + " guests!";
     } else {
-        uri = "I, " + name.value + ", am not attending your wedding.";
+        uri = "Congratulations! This is " + name.value + " and I cannot attend your wedding. Best of Luck!";
     }
     console.log(uri);
     let encoded = encodeURIComponent(uri);
-    let phone = "19167935731";
+    let phone = "19167537574";
     let href = "sms:+" + phone + "&body=" + encoded;
     location.href= href;
     
@@ -107,11 +107,11 @@ function checkChoice() {
 
 
 
-
+// https://www.w3schools.com/w3css/w3css_slideshow.asp
 function plusDivs(n) {
   showDivs(slideIndex += n);
 }
-
+// https://www.w3schools.com/w3css/w3css_slideshow.asp
 function showDivs(n) {
   var i;
   var x = document.getElementsByClassName("mySlides");
