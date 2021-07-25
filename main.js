@@ -72,7 +72,7 @@ function changeContent(contentID) {
         }
     }
 }
-// submit text message to Kenneth's phone number based on input
+// submit text message to Mandy's phone number based on input
 async function submitText() {
     let accept = document.getElementById("input-accept");
     let decline = document.getElementById("input-decline");
@@ -81,9 +81,9 @@ async function submitText() {
     console.log(accept.checked, decline.checked, name.value, count.value);
     let uri = "";
     if (accept.checked) {
-        uri = "Congratulations! This is " + name.value + " and I am attending your wedding with " + count.value + " guests!";
+        uri = "Congratulations! This is " + name.value + " and I/we am/are attending your wedding with " + count.value + " guest(s)!";
     } else {
-        uri = "Congratulations! This is " + name.value + " and I cannot attend your wedding. Best of Luck!";
+        uri = "Congratulations! This is " + name.value + " and I/we cannot attend your wedding. Best of Luck!";
     }
     console.log(uri);
     let encoded = encodeURIComponent(uri);
