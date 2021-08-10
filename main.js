@@ -79,7 +79,7 @@ async function submitText() {
   let decline = document.getElementById("input-decline");
   let name = document.getElementById("input-name");
   let count = document.getElementById("input-count");
-  if ((accept.value === false && decline.value === false) || name.value === "" || count.value === "") {
+  if ((accept.checked === false && decline.checked === false) || name.value === "" || count.value === "") {
     console.log("form incomplete")
     alert("Please fill out form completely");
   }
