@@ -74,10 +74,17 @@ function changeContent(contentID) {
 }
 // submit text message to Mandy's phone number based on input
 async function submitText() {
-    let accept = document.getElementById("input-accept");
-    let decline = document.getElementById("input-decline");
-    let name = document.getElementById("input-name");
-    let count = document.getElementById("input-count");
+  let width = screen.width;
+  let accept = document.getElementById("input-accept");
+  let decline = document.getElementById("input-decline");
+  let name = document.getElementById("input-name");
+  let count = document.getElementById("input-count");
+  if ((accept.value === false && decline.value === false) || name.value === "" || count.value === "") {
+    console.log("form incomplete")
+    alert("Please fill out form completely");
+  }
+  else {
+    console.log("form complete")
     console.log(accept.checked, decline.checked, name.value, count.value);
     let uri = "";
     if (accept.checked) {
@@ -87,10 +94,18 @@ async function submitText() {
     }
     console.log(uri);
     let encoded = encodeURIComponent(uri);
-    let phone = "19167537574";
-    let href = "sms:+" + phone + "&body=" + encoded;
+    let href = "";
+    if (width < 760) {
+      console.log(width, " => sending via mobile...");
+      let phone = "19167537574";
+      href = "sms:+" + phone + "&body=" + encoded;
+    } else {
+      console.log(width, " => sending via pc...");
+      let email = "mdaophan@gmail.com";
+      href = "mailto:" + email + "?subject=" + "Wedding RSVP!" + "&body=" + encoded;
+    }
     location.href= href;
-    
+  }
 }
  // prevent RSVP checking both accept and decline
 function checkChoice() {
