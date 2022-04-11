@@ -2,8 +2,8 @@
 Personal Wedding Website
 Setup for Github Pages
 
-## Github link
+## Github Link
 https://kennethdz.github.io/Wedding-Site/
 
-## For Netlify domain
+## Netlify Domain Link
 https://kennethandmandywedding.netlify.app/
