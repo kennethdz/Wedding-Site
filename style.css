@@ -34,7 +34,7 @@
     display: none;
   }
 
-  /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+  /* When the screen is less than 760 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 760px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -69,6 +69,14 @@
       text-align: left;
     }
   }
+
+  /* When the screen is more than 760 pixels wide, make video bigger for those that dont want to full screen*/
+@media screen and min-width: 760px) {
+    .video {
+    height: 60vh;
+    width: 90vh;
+    }
+}
 
   .bg-image {
     background-image: url("images/initials.jpeg");
@@ -199,6 +207,4 @@ label {
 
 .video {
     margin: auto;
-    height: 60vh;
-    width: 90vh;
 }
