@@ -40,11 +40,17 @@ function showInvitation() {
     changeContent("details-content");
 }
 
-  // show RSVP tab
+  // show Photos tab
   function showPhotos() {
     changeTab("photos-tab");
     changeContent("photos-content");
     showDivs(slideIndex);
+}
+
+  // show Video tab
+  function showVideo() {
+    changeTab("video-tab");
+    changeContent("video-content");
 }
 
 // tab of tabID becomes active and the rest become inactive
