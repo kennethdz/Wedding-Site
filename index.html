@@ -14,9 +14,9 @@
               <!-- navigation bar  -->
               <div class="topnav" id="myTopnav">
                 <a href="javascript:void(0);" class="tab active" id = "home-tab" onclick ="showHome()">Home</a>
-                <!-- <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a> -->
                 <a href="javascript:void(0);" class="tab" id = "invitation-tab" onclick ="showInvitation()">Invitations</a>
-                <a href="javascript:void(0);" class="tab" id = "rsvp-tab" onclick ="showRSVP()">RSVP</a>
+                <!-- <a href="javascript:void(0);" class="tab" id = "mimi-tab" onclick ="showMimi()">Mimi</a> -->
+                <!-- <a href="javascript:void(0);" class="tab" id = "rsvp-tab" onclick ="showRSVP()">RSVP</a> -->
                 <a href="javascript:void(0);" class="tab" id = "details-tab" onclick ="showDetails()">Details</a>
                 <a href="javascript:void(0);" class="tab" id = "photos-tab" onclick ="showPhotos()">Photos</a>
                 <a href="javascript:void(0);" class="tab" id = "video-tab" onclick ="showVideo()">Wedding Video</a>
@@ -45,18 +45,19 @@
         </div>
           <img id = "home-picture" src = "images/home-picture.jpeg">
       </div>
-      
-      <!-- all other tabs start out hidden  -->
-      <!-- mimi tab  -->
-      <!-- <div class = "content hide" id = "mimi-content">
-        <p> Welcome to my Mimi Page ! </p>
-        <img id = "mimi-picture" src = "images/MIMI.PNG"> 
-      </div> -->
+
       <!-- invitation tab  -->
       <div class = "content hide" id = "invitation-content">
         <img id = "church-picture" src = "images/invitation-church.jpg">
         <img id = "reception-picture" src = "images/invitation reception.jpg"> 
       </div>
+                 
+      <!-- mimi tab  -->
+      <!-- <div class = "content hide" id = "mimi-content">
+        <p> Welcome to my Mimi Page ! </p>
+        <img id = "mimi-picture" src = "images/MIMI.PNG"> 
+      </div> -->
+      
       <!-- RSVP tab  -->
       <div class = "content hide" id = "rsvp-content">
         <label> Please RSVP by October 15th, 2021
@@ -83,6 +84,7 @@
           <button id= "text-button" onclick = "submitText()" >Submit</button>
         </label>
       </div>
+      
       <!-- details tab  -->
       <div class = "content hide" id = "details-content">
         <!-- <div class = "detail-box">
