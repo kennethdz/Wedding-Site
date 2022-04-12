@@ -40,10 +40,10 @@ function showInvitation() {
     changeContent("details-content");
 }
 
-  // show Photos tab
-  function showPhotos() {
-    changeTab("photos-tab");
-    changeContent("photos-content");
+  // show Pre-Wedding Photos tab
+  function showPrePhotos() {
+    changeTab("pre-wedding-photos-tab");
+    changeContent("pre-wedding-photos-content");
     showDivs(slideIndex);
 }
 
@@ -51,6 +51,12 @@ function showInvitation() {
   function showVideo() {
     changeTab("video-tab");
     changeContent("video-content");
+}
+
+  // show Photobooth tab
+  function showPhotobooth() {
+    changeTab("photobooth-tab");
+    changeContent("photobooth-content");
 }
 
 // tab of tabID becomes active and the rest become inactive
