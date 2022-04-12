@@ -64,6 +64,7 @@ function changeTab(tabID) {
             tabs[i].classList.remove("active");
         }
     }
+    resizeNavBar();
 }
 
 
