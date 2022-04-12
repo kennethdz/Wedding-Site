@@ -73,8 +73,8 @@
   /* When the screen is more than 760 pixels wide, make video bigger for those that dont want to full screen*/
 @media screen and (min-width: 760px) {
     .video {
-    height: 60vh;
-    width: 90vh;
+    height: 40vh;
+    width: 70vh;
     }
 }
 
