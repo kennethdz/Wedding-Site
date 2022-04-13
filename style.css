@@ -72,6 +72,9 @@
 
   /* When the screen is more than 760 pixels wide, make video bigger for those that dont want to full screen*/
 @media screen and (min-width: 760px) {
+    .main {
+        flex-direction: row;
+    }
     .video {
     height: 40vh;
     width: 60vh;
@@ -204,10 +207,10 @@ label {
     max-height: 70vh;
 }
 #church-picture {
-    max-height: 70vh;
+    max-width: 600px;
 }
 #reception-picture {
-    max-height: 70vh;
+    max-width: 600px;
 }
 
 .qa {
