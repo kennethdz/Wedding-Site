@@ -200,6 +200,9 @@ label {
   /* only works well when are pictures are same orientation  */
   max-height: 70vh; 
 }
+#home-picture {
+    max-height: 70vh;
+}
 
 .qa {
   font-family:'Times New Roman', Times, serif;
