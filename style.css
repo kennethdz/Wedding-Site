@@ -79,6 +79,11 @@
     height: 40vh;
     width: 60vh;
     }
+    #details-content {
+       display: flex;
+       flex-direction: row;
+       margin: 20px;
+    }
 }
 
   .bg-image {
@@ -229,7 +234,4 @@ label {
     display: none;
     margin: auto;
 }
-#details-content {
-    display: flex;
-    flex-direction: row;
-}
+
