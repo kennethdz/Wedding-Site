@@ -212,5 +212,6 @@ label {
 .pa-gallery-player-widget {
     width:35vh;
     height:70vh; 
+    display: none;
     margin: auto;
 }
