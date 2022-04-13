@@ -47,16 +47,16 @@ function showInvitation() {
     showDivs(slideIndex);
 }
 
+  // show Photobooth tab
+  function showPhotobooth() {
+    changeTab("photobooth-tab");
+    changeContent("photobooth-content");     
+}
+
   // show Video tab
   function showVideo() {
     changeTab("video-tab");
     changeContent("video-content");
-}
-
-  // show Photobooth tab
-  function showPhotobooth() {
-    changeTab("photobooth-tab");
-    changeContent("photobooth-content");
 }
 
 // tab of tabID becomes active and the rest become inactive
