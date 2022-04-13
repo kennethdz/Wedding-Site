@@ -203,6 +203,12 @@ label {
 #home-picture {
     max-height: 70vh;
 }
+#church-picture {
+    max-height: 70vh;
+}
+#reception-picture {
+    max-height: 70vh;
+}
 
 .qa {
   font-family:'Times New Roman', Times, serif;
