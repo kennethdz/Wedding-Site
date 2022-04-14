@@ -37,16 +37,7 @@ function showInvitation() {
   // show Details tab
   function showDetails() {
     changeTab("details-tab");
-    changeContent("details-content");
-        let contents = document.getElementsByClassName("content");
-    for (let i = 0; i < contents.length; i++) {
-        if (contents[i].id === "details-content") {
-            contents[i].style.cssText += 'display: flex';
-        }
-    }
-    let content = document.getElementbyId("details-content");
-    if (content) {console.log("details-content found");}
-    
+    changeContent("details-content");    
 }
 
   // show Pre-Wedding Photos tab
