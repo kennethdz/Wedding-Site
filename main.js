@@ -34,10 +34,17 @@ function showInvitation() {
     changeTab("rsvp-tab");
     changeContent("rsvp-content");
 }
-  // show RSVP tab
+  // show Details tab
   function showDetails() {
     changeTab("details-tab");
     changeContent("details-content");
+        let contents = document.getElementsByClassName("content");
+    for (let i = 0; i < contents.length; i++) {
+        if (contents[i].id === "details-content") {
+            contents[i].style.cssText += 'display: flex';
+        }
+    }
+    
 }
 
   // show Pre-Wedding Photos tab
