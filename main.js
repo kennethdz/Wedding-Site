@@ -44,6 +44,8 @@ function showInvitation() {
             contents[i].style.cssText += 'display: flex';
         }
     }
+    let content = document.getElementbyId("details-content");
+    if (content) {console.log("details-content found");}
     
 }
 
