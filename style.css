@@ -195,9 +195,8 @@ img {
     border: 2px solid black;
     box-sizing: border-box;
     padding: 15px;
-    width: fit-content;
     max-width: 90vh;
-    margin: auto;
+    margin: 3%;
 }
 
 label {
@@ -232,4 +231,5 @@ label {
     height:70vh; 
     margin: auto;
 }
+
 
