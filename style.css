@@ -81,7 +81,7 @@
     }
     #details-content {
        flex-direction: row;
-       margin: 20px;
+       margin: auto;
     }
 }
 
