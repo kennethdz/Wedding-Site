@@ -212,9 +212,11 @@ label {
     max-height: 70vh;
 }
 #church-picture {
+    width: 70vh;
     max-width: 600px;
 }
 #reception-picture {
+    width: 70vh;
     max-width: 600px;
 }
 
